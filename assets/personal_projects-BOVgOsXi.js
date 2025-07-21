@@ -1,0 +1,1 @@
+import{j as o,c as t,L as e}from"./Layout-DvyY8MZe.js";function r(){return o.jsx("div",{children:o.jsx("h1",{children:"Personal Projects"})})}const n=document.getElementById("root"),s=t.createRoot(n);s.render(o.jsx(e,{children:o.jsx(r,{})}));
