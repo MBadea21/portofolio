@@ -1,5 +1,10 @@
+import InConstruction from './InConstruction'
 function App() {
-  return <div></div>
+	return (
+		<div>
+			<InConstruction />
+		</div>
+	)
 }
 
 export default App
