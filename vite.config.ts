@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
 				// Index
 				index: resolve(__dirname, "index.html"),
 				// Others
-				personal_projects: resolve(__dirname, "personal-projects.html"),
+				personal_projects: resolve(__dirname, "personal_projects.html"),
 			},
 		},
 	},
