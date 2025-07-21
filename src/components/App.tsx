@@ -1,4 +1,6 @@
-import InConstruction from './InConstruction'
+import InConstruction from "./InConstruction"
+import "../globals.css"
+
 function App() {
 	return (
 		<div>
