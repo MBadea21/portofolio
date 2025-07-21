@@ -1,0 +1,1 @@
+import{j as e,c as o,L as t}from"./Layout-BN5gewME.js";function n(){return e.jsx("div",{children:e.jsx("h1",{children:"Welcome Home"})})}const r=document.getElementById("root"),c=o.createRoot(r);c.render(e.jsx(t,{children:e.jsx(n,{})}));
