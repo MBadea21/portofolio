@@ -16,14 +16,31 @@ export default function Navbar() {
 	}
 	console.log("New Base URL:", new_ref)
 
+	const nav_links = [
+		{ name: "Home", path: new_ref + "/" },
+		{ name: "Personal Projects", path: new_ref + "/personal_projects" },
+	]
+
 	return (
-		<nav>
-			<ul>
-				<li>
-					<a href={new_ref + "/"}>Home</a>
-					<a href={new_ref + "/personal_projects"}>Personal Projects</a>
-				</li>
-			</ul>
+		<nav className="bg-zinc-900 flex items-center justify-between max-w-screen-lg p-5 mx-auto text-neutral-200">
+			<div className="cursor-default">
+				<h1 className="text-2xl font-bold">Mihai Badea</h1>
+			</div>
+
+			<div>
+				<ul className="flex space-x-10">
+					{nav_links.map((nav) => (
+						<li key={nav.name} className="">
+							<a
+								href={nav.path}
+								className="px-3 py-2.5 hover:text-blue-500 transition-all duration-100 ease-in-out"
+							>
+								{nav.name}
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
 		</nav>
 	)
 }

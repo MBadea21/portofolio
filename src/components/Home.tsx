@@ -1,7 +1,13 @@
 export default function Home() {
 	return (
 		<div>
-			<h1>Welcome Home</h1>
+			<h3>Skills</h3>
+
+			<ul>
+				<li>Programming: Javascript, Typescript, Python</li>
+				<li>Image Editing: Photoshop, Gimp</li>
+				<li>3D: Blender</li>
+			</ul>
 		</div>
 	)
 }
