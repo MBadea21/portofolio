@@ -1,5 +1,4 @@
 import { createRoot } from "react-dom/client"
-import "tailwindcss/tailwind.css"
 import Main from "components/Main"
 // import InConstruction from "components/InConstruction"
 

@@ -1,12 +1,15 @@
 export default function PersonalProjects() {
 	return (
-		<div>
+		<div className="mx-auto lg:max-w-screen-xl lg:pl-5">
 			<h1>Personal Projects</h1>
-
-			<div>
-				<h2>This website</h2>
-				<p>Created with Vite, React, Tailwind and hosted on GitHub Pages</p>
-			</div>
+			<ul>
+				<li>
+					<h2>This website</h2>
+					<p>Created with Vite, React, Tailwind</p>
+					<p>Hosted on GitHub Pages</p>
+					<a href="https://github.com/MBadea21/portofolio"> View on Github</a>
+				</li>
+			</ul>
 		</div>
 	)
 }
