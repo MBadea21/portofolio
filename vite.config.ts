@@ -21,8 +21,6 @@ export default defineConfig(({ mode }) => ({
 			input: {
 				// Index
 				index: resolve(__dirname, "index.html"),
-				// Others
-				personal_projects: resolve(__dirname, "personal_projects.html"),
 			},
 		},
 	},

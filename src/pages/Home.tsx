@@ -5,6 +5,7 @@ export default function Home() {
 
 			<ul>
 				<li>Programming: Javascript, Typescript, Python</li>
+				<li>Web: React, Next, Vite</li>
 				<li>Image Editing: Photoshop, Gimp</li>
 				<li>3D: Blender</li>
 			</ul>
