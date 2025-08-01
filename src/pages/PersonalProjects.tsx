@@ -6,15 +6,6 @@ interface Project {
 }
 
 export default function PersonalProjects() {
-	const projects_jsx: JSX.Element[] = [
-		<div>
-			<h2>This website</h2>
-			<p>Created with Vite, React, Tailwind</p>
-			<p>Hosted on GitHub Pages</p>
-			<a href="https://github.com/MBadea21/portofolio"> View on Github</a>
-		</div>,
-	]
-
 	const projects: Project[] = [
 		{
 			title: "This website",
