@@ -63,7 +63,7 @@ export default function Main() {
 				</div>
 			</nav>
 			{/* Main Content */}
-			<div className="pt-5">{current_page}</div>
+			<div className="">{current_page}</div>
 
 			{/* Paddng for scrolling at the bottom */}
 			<div className="h-screen"></div>
