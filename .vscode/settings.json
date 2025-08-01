@@ -1,8 +1,5 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "files.associations": {
-    "*.css": "tailwindcss"
-  }
+	"files.associations": {
+		"*.css": "tailwindcss"
+	}
 }
