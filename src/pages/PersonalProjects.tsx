@@ -1,7 +1,7 @@
 interface Project {
 	title: string
 	description: string
-	technologies_list: string[]
+	technologies_list: string[] | null
 	repository_url: string | null
 	image_src: string | null
 }
@@ -66,9 +66,19 @@ export default function PersonalProjects() {
 						<div className="m-0 flex flex-col space-y-5 pb-5 lg:w-2/3 lg:space-y-7 lg:pb-0">
 							<h2 className="text-2xl font-semibold">{project.title}</h2>
 							<p>{project.description}</p>
-							<p>
-								Technologies: <br /> {project.technologies_list.join(", ")}
-							</p>
+							{project.technologies_list && (
+								<span className="space-x-1">
+									Technologies <br />
+									{project.technologies_list.map((tech) => (
+										<p
+											key={tech}
+											className="inline-block rounded-sm bg-gray-700 px-1"
+										>
+											{tech}
+										</p>
+									))}
+								</span>
+							)}
 							{project.repository_url && (
 								<button className="bg-neutral align-center flex w-fit space-x-2 rounded-lg border border-gray-500 px-2 py-1">
 									<FaGithub size={20} className="my-auto" />
