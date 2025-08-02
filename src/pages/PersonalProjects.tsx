@@ -20,38 +20,38 @@ export default function PersonalProjects() {
 			repository_url: "https://github.com/MBadea21/portofolio",
 			image_src: website_picture2,
 		},
-		{
-			title: "Test 1",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
-			technologies_list: ["tech 1", "tech 2", "tech 3"],
-			repository_url: null,
-			image_src: null,
-		},
-		{
-			title: "Test 2",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
-			technologies_list: ["tech 1", "tech 2", "tech 3"],
-			repository_url: null,
-			image_src: null,
-		},
-		{
-			title: "Test 3",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
-			technologies_list: ["tech 1", "tech 2", "tech 3"],
-			repository_url: null,
-			image_src: null,
-		},
-		{
-			title: "Test 4",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
-			technologies_list: ["tech 1", "tech 2", "tech 3"],
-			repository_url: null,
-			image_src: null,
-		},
+		// {
+		// 	title: "Test 1",
+		// 	description:
+		// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
+		// 	technologies_list: ["tech 1", "tech 2", "tech 3"],
+		// 	repository_url: null,
+		// 	image_src: null,
+		// },
+		// {
+		// 	title: "Test 2",
+		// 	description:
+		// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
+		// 	technologies_list: ["tech 1", "tech 2", "tech 3"],
+		// 	repository_url: null,
+		// 	image_src: null,
+		// },
+		// {
+		// 	title: "Test 3",
+		// 	description:
+		// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
+		// 	technologies_list: ["tech 1", "tech 2", "tech 3"],
+		// 	repository_url: null,
+		// 	image_src: null,
+		// },
+		// {
+		// 	title: "Test 4",
+		// 	description:
+		// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet viverra nibh. Sed congue diam vel ipsum bibendum, ac volutpat tellus iaculis. Donec cursus eu nisl imperdiet ultricies. Aliquam ultrices risus volutpat.",
+		// 	technologies_list: ["tech 1", "tech 2", "tech 3"],
+		// 	repository_url: null,
+		// 	image_src: null,
+		// },
 	]
 
 	return (
