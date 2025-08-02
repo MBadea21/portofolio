@@ -15,7 +15,7 @@ export default function PersonalProjects() {
 		{
 			title: "This website",
 			description:
-				"A website to showcase my web development skills and to provide easy access to my other projects.",
+				"A website to showcase my web development skills and to provide easy access to my other projects. Responive, mobile first layout. Hosted for on GitHub Pages.",
 			technologies_list: ["Vite", "React", "Typescript", "Tailwind", "DaisyUI"],
 			repository_url: "https://github.com/MBadea21/portofolio",
 			image_src: website_picture2,
