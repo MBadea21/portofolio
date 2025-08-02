@@ -61,7 +61,7 @@ export default function PersonalProjects() {
 				{projects.map((project, index) => (
 					<li
 						key={index}
-						className="bg-base-200 flex h-fit flex-col justify-between space-y-10 rounded-xl p-5 shadow-xl lg:h-[300px] lg:w-4/7 lg:flex-row lg:space-x-30 lg:rounded-3xl lg:p-7"
+						className="bg-base-200 flex h-fit origin-center flex-col justify-between space-y-10 rounded-xl p-5 shadow-xl transition-transform duration-100 ease-in-out hover:scale-105 lg:h-[300px] lg:w-4/7 lg:flex-row lg:space-x-30 lg:rounded-3xl lg:p-7"
 					>
 						<div className="m-0 flex flex-col space-y-5 pb-5 lg:w-2/3 lg:space-y-7 lg:pb-0">
 							<h2 className="text-2xl font-semibold">{project.title}</h2>
