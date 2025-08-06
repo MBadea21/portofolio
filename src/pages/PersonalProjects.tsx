@@ -16,7 +16,14 @@ export default function PersonalProjects() {
 			title: "This website",
 			description:
 				"A website to showcase my web development skills and to provide easy access to my other projects. Responive, mobile first layout. Hosted for on GitHub Pages.",
-			technologies_list: ["Vite", "React", "Typescript", "Tailwind", "DaisyUI"],
+			technologies_list: [
+				"Vite",
+				"React",
+				"Typescript",
+				"Tailwind",
+				"DaisyUI",
+				"Motion",
+			],
 			repository_url: "https://github.com/MBadea21/portofolio",
 			image_src: website_picture2,
 		},
@@ -55,13 +62,13 @@ export default function PersonalProjects() {
 	]
 
 	return (
-		<div className="mx-auto p-3 lg:p-0">
-			<h1 className="mx-auto w-fit text-4xl lg:p-5">Personal Projects</h1>
-			<ul className="flex flex-col space-y-5 lg:items-center lg:space-y-20">
+		<div className="mx-auto">
+			<h1 className="mx-auto w-fit py-5 text-4xl lg:p-5">Personal Projects</h1>
+			<ul className="flex flex-col space-y-5 pb-10 lg:items-center lg:space-y-20">
 				{projects.map((project, index) => (
 					<li
 						key={index}
-						className="bg-base-200 flex h-fit origin-center flex-col justify-between space-y-10 rounded-xl p-5 shadow-xl transition-transform duration-100 ease-in-out hover:scale-105 hover:shadow-2xl lg:h-[300px] lg:w-4/7 lg:flex-row lg:space-x-30 lg:rounded-3xl lg:p-7"
+						className="bg-base-200 flex h-fit origin-center flex-col justify-between space-y-10 rounded-xl p-5 shadow-xl transition-transform duration-100 ease-in-out lg:h-[300px] lg:w-4/7 lg:flex-row lg:space-x-30 lg:rounded-3xl lg:p-7 lg:hover:scale-105 lg:hover:shadow-2xl"
 					>
 						<div className="m-0 flex flex-col space-y-5 pb-5 lg:w-2/3 lg:space-y-7 lg:pb-0">
 							<h2 className="text-2xl font-semibold">{project.title}</h2>
@@ -80,10 +87,17 @@ export default function PersonalProjects() {
 								</span>
 							)}
 							{project.repository_url && (
-								<button className="bg-neutral align-center flex w-fit space-x-2 rounded-lg border border-gray-500 px-2 py-1">
-									<FaGithub size={20} className="my-auto" />
-									<a href={project.repository_url}>View on Github</a>
-								</button>
+								<a
+									className="bg-neutral align-center hover flex w-fit space-x-2 rounded-lg border border-gray-500 px-2 py-1"
+									href={project.repository_url}
+								>
+									<FaGithub
+										size={20}
+										className="my-auto"
+										href={project.repository_url}
+									/>
+									<p>View on Github</p>
+								</a>
 							)}
 						</div>
 						<div className="place-items-center lg:w-full">
