@@ -3,21 +3,16 @@ import PersonalProjects from "pages/PersonalProjects"
 import { useState } from "react"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { RxCross2 } from "react-icons/rx"
+import PageManager from "./PageManager"
 
 export default function Main() {
-	const pages: { [key: string]: JSX.Element } = {
+	const pages_dict: { [key: string]: JSX.Element } = {
 		Home: <Home />,
 		"Personal Projects": <PersonalProjects />,
 	}
+	const [current_page_name, set_current_page_name] = useState<string>("Home")
 
-	const [current_page, set_current_page_element] = useState<JSX.Element>(
-		<Home />
-	)
 	const [mobile_nav_visible, set_mobile_nav_visible] = useState<boolean>(false)
-
-	function set_page(page_name: string) {
-		set_current_page_element(pages[page_name])
-	}
 
 	return (
 		<div className="">
@@ -26,7 +21,7 @@ export default function Main() {
 				<div className="flex justify-between">
 					<button
 						className="cursor-pointer text-2xl"
-						onClick={() => set_page("Home")}
+						onClick={() => set_current_page_name("Home")}
 					>
 						Mihai Badea
 					</button>
@@ -49,11 +44,11 @@ export default function Main() {
 					}`}
 				>
 					<ul className="flex flex-col lg:flex-row">
-						{Object.keys(pages).map((page_name) => (
+						{Object.keys(pages_dict).map((page_name) => (
 							<li key={page_name} className="pt-5 lg:pt-0 lg:pl-5">
 								<button
 									className="cursor-pointer transition-all duration-100 ease-in-out hover:text-blue-500"
-									onClick={() => set_page(page_name)}
+									onClick={() => set_current_page_name(page_name)}
 								>
 									{page_name}
 								</button>
@@ -63,7 +58,12 @@ export default function Main() {
 				</div>
 			</nav>
 			{/* Main Content */}
-			<div className="">{current_page}</div>
+			<div className="min-h-fit max-w-screen overflow-x-hidden">
+				<PageManager
+					pages_dict={pages_dict}
+					current_page_name={current_page_name}
+				/>
+			</div>
 
 			{/* Paddng for scrolling at the bottom */}
 			{/* <div className="h-screen"></div> */}
