@@ -1,14 +1,16 @@
 export default function Home() {
 	return (
-		<div className="mx-auto flex flex-col lg:max-w-screen-xl lg:flex-row lg:pl-5">
-			<div className="">
-				<h2>About me</h2>
-				<p>Multi-disclipline, Computer Savvy Individual</p>
-				<p>Technically Minded, Fast Learner</p>
+		<div className="bg-base-200 mx-auto flex max-w-fit flex-col space-y-10 rounded-3xl lg:mt-[100px] lg:p-10">
+			<div className="flex flex-col space-y-3">
+				<h1 className="bold text-5xl">Multidisciplinary developer</h1>
+				<p className="text-2xl">
+					Skilled in Web Development, Managing Linux Systems, IoT integration,
+					and Creating or Editing Digital Media
+				</p>
 			</div>
-			<div>
-				<h2>Skills</h2>
-				<ul>
+			<div className="space-y-3">
+				<h2 className="text-2xl">Skills and know-how:</h2>
+				<ul className="space-y-2 text-xl">
 					<li>Programming languages: Javascript, Typescript, Python</li>
 					<li>
 						System Administration: VPS Management, Linux Shell, Basic
